@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  min-width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgb(0,153,255) 0%, rgb(255,0,120) 100%);
+  color: white;
+}
+
+#calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.5rem;
+  background-color: rgb(255, 255, 255, 0.1);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 3rem;
+  border-radius: 1rem;
+}
+
+#calculator .display {
+  text-align: right;
+  grid-area: 1/1/2/5;
+  min-height: 2.5rem;
+  font-size: 2.5rem;
+  padding: 0 1rem;
+}
+
+button {
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+#calculator button {
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+#calculator button:hover, #calculator button:last-child {
+  background-color: rgb(255, 255, 255, 0.2);
+}
+
+#calculator button:last-child {
+  background-color: rgb(255, 255, 255, 0.1);
+}
